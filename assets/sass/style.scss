@@ -1,0 +1,85 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Gerdnx - Gardening And Landscaping PHP Template
+    Author: Codeplazabd 
+    Author URI: https://themeforest.net/user/codeplazabd
+    Version: 1.0
+
+--------------------------
+   CSS INDEX
+--------------------------
+    01. Common css 
+    02. header section
+    03. dc-hero-area Style
+    04. footer Style
+    05. Home-style-1
+    06. about-area 
+    07. service-area
+    08. work-area
+    09. text-moving-sec 
+    10. ch-choose-area
+    11. ch-project-area
+    12. pricing-section
+    13. video-area
+    14. testimonial-section
+    15. brand-section
+    16. faq-section
+    17. ch-blog-area
+    18. ch-cta-area
+    19. Home-style-2
+    20. Home-style-3
+    21. Home-style-4
+    22.	team single page
+    23. Service Page
+    24. Project Single
+    25. Shop Page
+    26. Cart Page
+    27. Checkout-page
+    28. Blog Page
+    29. Blog Single Page
+    30. Contact Page
+    31. 404 page
+
+    -----------------------------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/pagination";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style-2";
+@import "page/home-style-3";
+@import "page/home-style-4";
+@import "page/team-single";
+@import "page/services";
+@import "page/project";
+@import "page/shop";
+@import "page/cart";
+@import "page/checkout";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/contact";
+@import "page/error";
+@import "page/preview";

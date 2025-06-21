@@ -1,0 +1,222 @@
+/*--------------------------------------------------------------
+23. Service Page
+--------------------------------------------------------------*/
+
+.service-page {
+    z-index: 1;
+    position: relative;
+
+    .service-area {
+        background: none;
+    }
+}
+
+// service-single-page
+
+.service-single-page {
+
+    .service-sidebar {
+        @media(max-width:991px) {
+            margin-top: 50px;
+        }
+
+        .widget {
+            padding: 40px;
+            border-radius: 5px;
+            background: #F4F4F4;
+
+            @media(max-width:575px){
+                padding: 30px;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                color: $black-bg-color;
+                margin-bottom: 20px;
+            }
+        }
+
+        .category-widget {
+            margin-bottom: 40px;
+
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                        display: block;
+                        border-radius: 0;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+                        padding: 18px 0;
+                        color: $main-heading-color;
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            content: "\e933";
+                            font-family: 'icomoon';
+                            font-size: 10px;
+                        }
+
+                        &:hover {
+                            color: $project-primary-color;
+                        }
+                    }
+
+                    &:last-child {
+                        a {
+                            padding-bottom: 0;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .garden-widget {
+            .garden-widget-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &+.garden-widget-item {
+                    margin-top: 20px;
+                }
+
+                .garden-widget-left {
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        margin-right: 20px;
+                    }
+
+                    h4 {
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 27px;
+                        margin-bottom: 0;
+
+                        span {
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 30px;
+                            font-family: "DM Sans";
+                            color: $text-color;
+                        }
+                    }
+                }
+
+                i {
+                    font-size: 30px;
+                    color: #727272;
+                    transition: all .3s;
+                }
+
+                &:hover {
+                    i {
+                        color: $project-primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .service-details {
+
+        .details-img {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 58px;
+            margin-bottom: 20px;
+
+            @media(max-width:575px){
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+
+        .details-items {
+            padding: 30px 0;
+
+            h3 {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27px;
+                color: $black-bg-color;
+
+                @media(max-width:575px){
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+
+                i {
+                    font-size: 10px;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    background: $black-bg-color;
+                    border-radius: 50%;
+                    color: $white;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .process {
+            margin-top: 40px;
+            h3 {
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+                margin-bottom: 20px;
+
+                @media(max-width:575px){
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+
+            ul {
+                li {
+                    padding-left: 35px;
+                    position: relative;
+                    &+li {
+                        margin-top: 20px;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        content: "\e930";
+                        font-family: 'icomoon';
+                        font-size: 14px;
+                        color: $project-primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+}

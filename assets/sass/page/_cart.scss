@@ -1,0 +1,252 @@
+/*--------------------------------------------------------------
+26. Cart Page
+--------------------------------------------------------------*/
+
+.cart-section {
+    padding: 80px 0;
+
+
+    @media (max-width: 991px) {
+        .cart-area-wrap {
+            overflow: scroll;
+            overflow-y: hidden;
+        }
+
+        .cart-table {
+            width: 1022px;
+        }
+    }
+
+    .product-crt-card {
+        padding: 30px 0;
+        border-bottom: 1.5px solid $border-color-s2;
+
+        .product-crt-left {
+            display: flex;
+            align-items: center;
+
+            @media (max-width:575px) {
+                flex-wrap: wrap;
+            }
+
+            .product-crt-img {
+                img {
+                    width: 100%;
+                    max-width: 120px;
+                }
+            }
+
+            .product-crt-details {
+                padding-left: 50px;
+
+                @media (max-width:991px) {
+                    padding-left: 30px;
+                }
+
+                @media (max-width:575px) {
+                    padding-left: 8px;
+                    padding-top: 20px;
+                }
+
+                ul {
+                    li {
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 28px;
+                        margin-bottom: 20px;
+
+                        @media (max-width:575px) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-crt-right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .product-crt-icon {
+                ul {
+                    li {
+                        a {
+                            font-size: 20px;
+                            color: $text-color;
+
+                            &:hover {
+                                color: $project-primary-color;
+                            }
+                        }
+
+                        &:first-child {
+                            margin-bottom: 20px;
+
+                            @media (max-width:768px) {
+                                margin-bottom: 0;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+
+                    @media (max-width:768px) {
+                        display: flex;
+                    }
+                }
+            }
+
+            .product-crt-blance {
+                padding-right: 100px;
+
+                @media (max-width:991px) {
+                    padding-right: 0;
+                }
+
+                span {
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $main-heading-color;
+                }
+            }
+
+            @media (max-width:768px) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    .quantity {
+        position: relative;
+        display: inline-block;
+
+        input {
+            width: 160px;
+            background: transparent;
+            padding: 0px 35px;
+            text-align: center;
+            height: 40px;
+            border: none;
+            position: relative;
+            border: 1.5px solid $border-color-s2;
+        }
+
+        .qtybutton {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 38px;
+            font-size: 18px;
+            cursor: pointer;
+            font-size: 25px;
+
+            .qtybutton {
+                top: 50%;
+                left: 17px;
+                transform: translateY(-51%);
+                -webkit-transform: translateY(-51%);
+                -moz-transform: translateY(-51%);
+            }
+        }
+
+        .qtybutton.inc {
+            right: 0px;
+            left: auto;
+        }
+    }
+
+    .col {
+        &:first-child {
+            .product-crt-card {
+                padding-top: 0;
+            }
+        }
+
+        &:last-child {
+            .product-crt-card {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .cart-main-wrapper {
+        padding-top: 30px;
+        border-top: 1px solid $border-color-s2;
+        margin-top: 30px;
+
+        p {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 36px;
+            color: $main-heading-color;
+        }
+
+        .cupon-wrap {
+            position: relative;
+            margin-bottom: 60px;
+
+            input {
+                width: 100%;
+                height: 45px;
+                border: 1px solid $main-heading-color;
+                padding-left: 20px;
+                background: transparent;
+            }
+
+            button {
+                width: 150px;
+                height: 45px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: $main-heading-color;
+                color: #fff;
+                text-transform: uppercase;
+                border: none;
+            }
+        }
+
+    }
+
+    .cart-main-right {
+        padding-right: 100px;
+
+        @media(max-width:767px) {
+            padding-right: 0;
+            padding-top: 30px;
+        }
+
+        @media (max-width:991px) {
+            padding-right: 0;
+        }
+
+        ul {
+            li {
+                display: flex;
+                justify-content: space-between;
+                font-size: 18px;
+
+                &+li {
+                    padding-top: 20px;
+                }
+
+                &:last-child {
+                    padding-top: 30px;
+                    margin-top: 30px;
+                    border-top: 1px solid $border-color-s2
+                }
+            }
+        }
+
+        .cart-s-btn {
+            margin-top: 50px;
+            text-align: right;
+        }
+    }
+}
