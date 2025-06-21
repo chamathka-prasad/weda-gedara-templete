@@ -1,0 +1,90 @@
+.ch-top-title,
+.ch-top-title-s2,
+.ch-top-title-s3 {
+	margin-bottom: 60px;
+
+	@include media-query(991px) {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	@include media-query(575px) {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	span {
+		font-family: "DM Sans";
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		color: $project-primary-color;
+		position: relative;
+		display: inline-block;
+		padding-left: 35px;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: -2px;
+			content: "";
+			width: 26.667px;
+			height: 26.667px;
+			background: url(../images/icon/tea-leaf2.png);
+			animation: bounceLeftToRight 4s infinite;
+		}
+	}
+
+	h2 {
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 58px;
+		color: $main-heading-color;
+		margin-top: 10px;
+
+		@include media-query(1199px) {
+			font-size: 40px;
+			line-height: 50px;
+		}
+
+		@include media-query(991px) {
+			font-size: 35px;
+			line-height: 40px;
+		}
+
+		small {
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke: 1px #1F212D;
+		}
+
+	}
+
+	p {
+		font-size: 18px;
+	}
+}
+
+.ch-top-title-s2 {
+	text-align: center;
+
+	h2 {
+		color: $main-heading-color;
+	}
+
+	&.white {
+		h2 {
+			color: $white;
+		}
+	}
+}
+
+// ch-top-title-s3
+
+.ch-top-title-s3 {
+	h2 {
+		color: $white;
+	}
+}

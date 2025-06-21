@@ -1,0 +1,199 @@
+/*--------------------------------------------------------------
+22.	team single page
+--------------------------------------------------------------*/
+
+// team-area style-3
+
+.team-area.style-3 {
+    background: $white;
+    padding-bottom: 70px;
+
+    @media(max-width:991px) {
+        padding-bottom: 40px;
+    }
+
+    @media(max-width:767px) {
+        padding-bottom: 30px;
+    }
+
+    .team-wrap {
+        padding-bottom: 0;
+
+        .team-item {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.team-single-section {
+
+    .single-img {
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .single-info-items {
+        h3 {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            margin-bottom: 30px;
+
+            @media(max-width:575px) {
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+        }
+
+        ul {
+            li {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                display: flex;
+                align-items: flex-start;
+
+                &+li {
+                    margin-top: 30px;
+                }
+
+                span {
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: $main-heading-color;
+                    margin-right: 20px;
+                    display: flex;
+                    align-items: center;
+                    flex-basis: 20%;
+
+                    i {
+                        color: $project-primary-color;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .single-content {
+        padding-left: 60px;
+
+        @media(max-width:991px) {
+            padding-left: 0;
+            margin-top: 30px;
+        }
+
+        .content-top {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 58px;
+
+                @media(max-width:575px) {
+                    font-size: 32px;
+                    line-height: 48px;
+                }
+            }
+
+            span {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 20px;
+                color: $project-primary-color;
+
+                @media(max-width:575px) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+
+    .progress-area {
+        margin-top: 60px;
+
+        @media(max-width:991px) {
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            margin-bottom: 30px;
+
+            @media(max-width:575px) {
+                font-size: 32px;
+                line-height: 48px;
+            }
+        }
+
+        .progress-wrap {
+            padding: 40px;
+            border-radius: 5px;
+            background: #FFF;
+            box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+
+            @media(max-width:575px) {
+                padding: 20px;
+            }
+        }
+
+        .progress-single {
+            margin-bottom: 20px;
+            position: relative;
+
+            h5 {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px;
+                margin-bottom: 10px;
+            }
+
+            .progress {
+                background: #E3E3E3;
+                height: 5px;
+                position: relative;
+
+                .progress-bar {
+                    background-color: $project-primary-color;
+                    height: 5px;
+                    position: relative;
+                    top: 0px;
+                    left: 0px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .progress-number {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: $main-heading-color;
+            margin-bottom: 5px;
+
+            @media(max-width:767px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+}
